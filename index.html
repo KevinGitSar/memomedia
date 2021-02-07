@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>~Memo Media~</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/login.js"></script>
+
+    <!-- 
+    Kevin Sar, 000390567
+    Created: Wednesday, ‎December ‎9, ‎2020, ‏‎4:08:50 PM
+    This html file is the main login/sign up page for the user
+    -->
+
+</head>
+
+<body>
+    <div id="mainBody">
+    <form method="POST" id="mainPage">
+        <h1>Memo Media</h1>
+        <h2>Log in</h2>
+
+        <div>
+            <label>Username: </label>
+            <input type="email" id="username" name="username" required>
+        </div>
+        <br>
+        <div>
+            <label>Password: </label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <p id="target6">
+                
+            </p>
+        </div>
+        <br>
+        <div>
+            <input type="button" id="signUpButton" name="signUpButton" value="Sign Up">
+            <input type="submit" id="loginButton" name="loginButton" value="Log in">
+        </div>
+
+    </form>
+
+    <form method="POST" id="signUpPage">
+        <h1>Memo Media</h1>
+        <h2>Create Account</h2>
+
+        <div>
+            <label>Username: </label>
+            <input type="email" id="createUsername" name="createUsername" required>
+        </div>
+        <br>
+        <div>
+            <label>Password: </label>
+            <input type="password" id="createPassword" name="createPassword" required>
+        </div>
+        <div>
+            <br>
+            <p id="target">
+                Password must be 8 or more characters
+            </p>
+            <p id="target2">
+                Password Requires at least 1 special character
+            </p>
+            <p id="target3">
+                Password Requires at least 1 uppercase letter
+            </p>
+            <p id="target4">
+                Password Requires at least 1 number
+            </p>
+            <p id="target5">
+                
+            </p>
+        </div>
+        <br>
+        <div>
+            <input type="button" id="returnButton" name="returnButton" value="Go Back to Login">
+            <input type="submit" id="createButton" name="createButton" value="Create">
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>

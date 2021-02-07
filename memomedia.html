@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>~Memo Media~</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/memomedia.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/memomedia.js"></script>
+
+    <!-- 
+    Kevin Sar, 000390567
+    Created: ‎Wednesday, ‎December ‎9, ‎2020, ‏‎1:15:08 AM
+    This html page is the main part of the application where the user
+    sees their movie, tvshow, book records
+    -->
+
+</head>
+
+<body>
+    <div id="error">
+        <p>Session Failed3</p>
+        <br>
+        <a href="index.html">Return to Log in Page</a>
+    </div>
+    <div id="menu">
+        
+        <h1>Memo Media</h1>
+        
+        <!-- Button Menu -->
+        <div id="buttonGroup">
+            <input type="button" id="movie" value="Movie">
+            <input type="button" id="tvShow" value="TV Show">
+            <input type="button" id="book" value="Book">
+            <input type="button" id="logout" name="logout" value="Log Out">
+        </div>
+        <br>
+        <!-- Movie Add -->
+        <form id="movieF">
+        <div id="movieForm">
+            <div class="odd">
+                <label>Enter Movie Title: </label>
+                <input type="text" id="movieTitle" name="movieTitle" placeholder="Enter Movie Title" required>
+            </div>
+            <div>
+                <label>Enter Year Released: </label>
+                <input type="number" id="movieYear" name="movieYear" placeholder="2020" value="2020" required>
+            </div>
+            <div class="odd">
+                <label>Completed? [Check = Yes]</label>
+                <input type="checkbox" id="movieBox">
+            </div>
+            <div>
+                <input type="submit" id="addMovie" value="Add Movie!">
+            </div>
+        </div>
+        </form>
+        <form id="tvShowF">
+        <!-- Tv Show Add -->
+        <div id="tvShowForm">
+            <div class="odd">
+                <label>Enter Tv Show Title: </label>
+                <input type="text" id="tvShowTitle" name="tvShowTitle" placeholder="Enter TV Show Title" required>
+            </div>
+
+            <div>
+                <label>Enter the Season you are on: </label>
+                <input type="number" id="tvShowSeason" name="tvShowSeason" min="0" value="1" required>
+            </div>
+
+            <div class="odd">
+                <label>Enter the Episode you are on: </label>
+                <input type="number" id="tvShowEpisode" name="tvShowEpisode" min="0" value="1" required>
+            </div>
+
+            <div>
+                <label>Enter Year Released: </label>
+                <input type="number" id="tvShowYear" name="tvShowYear" placeholder="2020" min="0" value="2020" required>
+            </div>
+            <div class="odd">
+                <label>Completed? [Check = Yes]</label>
+                <input type="checkbox" id="tvShowBox">
+            </div>
+            <div>
+                <input type="submit" id="addTvShow" value="Add Tv Show!">
+            </div>
+        </div>
+        </form>
+        <form id="bookF">
+        <!-- Book Add -->
+        <div id="bookForm">
+            <div class="odd">
+                <label>Enter Book Title: </label>
+                <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter Book Title" required>
+            </div>
+            <div>
+                <label>Enter the Author: </label>
+                <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter Author of the book" required>
+            </div>
+            <div class="odd">
+                <label>Enter the Year of the book: </label>
+                <input type="number" id="bookYear" name="bookYear" min="0" value="2020" required>
+            </div>
+            <div>
+                <label>Enter the chapter you are on: </label>
+                <input type="number" id="bookChapter" name="bookChapter" min="0" value="1" required>
+            </div>
+            <div class="odd">
+                <label>Enter the page number you are on: </label>
+                <input type="number" id="bookPage" name="bookPage" min="0" value="1" required>
+            </div>
+            <div>
+                <label>Completed? [Check = Yes]</label>
+                <input type="checkbox" id="bookBox">
+            </div>
+            <div class="odd">
+                <p id="emptySlot"></p>
+            </div>
+            <div>
+                <input type="submit" id="addBook" value="Add Book!">
+            </div>
+        </div>
+        </form>
+
+        <div id="mainList">
+            <h2>Master List</h2>
+            <ul id="masterList">
+            </ul>
+        </div>
+        <div>
+            <ul id="movieList">
+
+            </ul>
+        </div>
+        <div>
+            <ul id="tvShowList">
+
+            </ul>
+        </div>
+        <div>
+            <ul id="bookList">
+
+            </ul>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>

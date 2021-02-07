@@ -1,0 +1,65 @@
+/**
+ * Kevin Sar, 000390567
+ * Created: ‎‎‎Wednesday, ‎December ‎9, ‎2020, ‏‎4:13:17 PM
+ * This CSS file makes the login/sign up page look pretty
+ */
+body
+{
+    background-color: rgb(176, 145, 207);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainBody, #signUpPage, #mainPage
+{
+    width: 50%;
+    margin: auto;
+}
+
+#mainBody
+{
+    margin-top: 50px;
+}
+
+#target, #target2, #target3, #target4, #target5, #target6
+{
+    color: rgb(124, 0, 0);
+}
+
+h1, h2, label
+{
+    color: rgb(72, 10, 134);
+}
+
+h1
+{
+    padding-left: 15%;
+}
+
+label 
+{
+    width: 80px;
+    display: inline-block;
+}
+
+input[type=button], input[type=submit]
+{
+    width: 160px;
+    background-color: rgb(99, 0, 199);
+    color: rgb(176, 145, 207);
+    font-size: large;
+}
+
+input[type=email], input[type=password]
+{
+    width: 230px;
+}
+
+#signUpPage
+{
+    display: none;
+}
+
+#target5
+{
+    display: none;
+}
